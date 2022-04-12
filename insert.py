@@ -13,12 +13,7 @@ def insert(m):
 
 
 
-def delete(m):
-	Tmsg = m.text
-	Tmsg = Tmsg.split()[1 ]
-	Tmsg = ' '.join(map(str, Tmsg))
-	with open('replays.txt', 'w', encoding='utf-8') as file:
-	   txt.replace(Tsmg, ' ')
+
     
     
     
