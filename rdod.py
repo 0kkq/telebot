@@ -27,8 +27,7 @@ def reply(m):
 		en_zkh(m)
 	elif 'اضف رد' in m.text:
 		insert(m)
-	elif 'حذف'in m.text:
-		delete(m)
+	
 	elif 'ايدي'in m.text:
 		info_tele(m)
 	else:
