@@ -11,16 +11,19 @@ logger = telebot.logger
 logger.setLevel(logging.DEBUG)
 
 
+bot.delete_webhook()
+
 @bot.message_handler(commands=['start'])
-def boten(message):
-	def startt(m):
-		@bot.callback_query_handler(func=lambda call: True)
-		def answer(call):
-		  			if call.data == 'zkh':
-		  				en_zkh(call.message)
-		@bot.message_handler(func = lambda m : True)
-		def rdod(m):
-			reply(m)
+def startt(m):
+	bot.reply_to(m, 'hi')
+	
+@bot.callback_query_handler(func=lambda call: True)
+def answer(call):
+	   			if call.data == 'zkh':
+	   				en_zkh(call.message)
+@bot.message_handler(func = lambda m : True)
+def rdod(m):
+	reply(m)
 
 		
 
