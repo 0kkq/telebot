@@ -4,6 +4,9 @@ from telebot import types
 from user_agent import generate_user_agent
 import logging
 from info import *
+from rdod import *
+from btns import *
+from insert import *
 from flask import Flask, request
 
 server = Flask(__name__)
