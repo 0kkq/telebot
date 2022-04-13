@@ -18,4 +18,8 @@ def rdod(m):
 	reply(m)
 
 
-bot.infinity_polling()
+while True:
+    try:
+        bot.polling(none_stop=True)
+    except Exception as ex:
+        telebot.logger.error(ex)
